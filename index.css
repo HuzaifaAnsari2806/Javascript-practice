@@ -1,0 +1,39 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 equal columns */
+    grid-template-rows: repeat(3, 1fr);
+    /* 3 equal rows */
+    gap: 10px;
+    /* optional spacing between items */
+    width: 300px;
+    /* adjust width */
+    height: 300px;
+    /* adjust height */
+}
+
+.container>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+    /* optional item border */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+button {
+    margin: 50px;
+    background-color: aqua;
+    color: blue;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}

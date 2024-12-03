@@ -1,0 +1,114 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Styling for Conversion Sections */
+.from,
+.to {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.from img,
+.to img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.from p,
+.to p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Styling for Amount Input */
+.amount {
+    margin-bottom: 20px;
+}
+
+.amount input {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Styling for Converted Amount */
+.Converted-amount {
+    margin-bottom: 20px;
+}
+
+.Converted-amount input {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #e9ecef;
+    color: #495057;
+}
+
+/* Styling for Button */
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .from,
+    .to {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .amount input,
+    .Converted-amount input {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+    }
+}
